@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 816bd0050bf9d7d4e8e7661707a99e9d, type: 3}
+  m_Name: New Character Database
+  m_EditorClassIdentifier: 
+  character:
+  - characterName: alpha
+    characterSprite: {fileID: 21300000, guid: e90f18054ec86614aa09f8898eddad39, type: 3}
+  - characterName: beta
+    characterSprite: {fileID: 21300000, guid: a6258439c09cf374e8d1ba5eed3bef17, type: 3}
+  - characterName: apolo
+    characterSprite: {fileID: 21300000, guid: cd2f572ebd5d71842bb394d1045b23b5, type: 3}
+  - characterName: metal
+    characterSprite: {fileID: 21300000, guid: f99c5745257218f4ab6bd5cf9bff1f8c, type: 3}

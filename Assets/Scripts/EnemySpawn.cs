@@ -21,9 +21,7 @@ public class EnemySpawn : MonoBehaviour
     {
         scorekeeper = FindObjectOfType<Scorekeeper>();
     }
-    /// <summary>
-    /// //
-    /// </summary>
+
     void Start()
     {
         StartCoroutine(SpawnEnemyWave());

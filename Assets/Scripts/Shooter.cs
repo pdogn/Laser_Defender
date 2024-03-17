@@ -32,7 +32,6 @@ public class Shooter : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         Fire();
@@ -58,7 +57,6 @@ public class Shooter : MonoBehaviour
             GameObject instance = Instantiate(projectilePrefabs, 
                                             transform.position, 
                                             Quaternion.identity);
-
 
             Rigidbody2D rb = instance.GetComponent<Rigidbody2D>();
             if(rb!= null)

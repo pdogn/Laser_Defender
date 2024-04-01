@@ -1091,7 +1091,7 @@ MonoBehaviour:
   isLooping: 1
   bossPref: {fileID: 4352007423916795192, guid: 312db4ec94ff08643a8636a32b1df19a, type: 3}
   isSpawn: 1
-  n_score: 5000000
+  n_score: 200
 --- !u!4 &1708091343
 Transform:
   m_ObjectHideFlags: 0

@@ -86,6 +86,7 @@ public class Health : MonoBehaviour
         {
             levelManager.LoadWinScene();/////
         }
+
         if (!isPlayer)
         {
             scorekeeper.ModifyScore(score);

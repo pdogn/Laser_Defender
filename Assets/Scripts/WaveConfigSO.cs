@@ -23,6 +23,7 @@ public class WaveConfigSO : ScriptableObject
     {
         return enemyPrefabs[index];
     }
+
     public Transform GetStartingWaypoint()
     {
         return pathPrefab.GetChild(0);

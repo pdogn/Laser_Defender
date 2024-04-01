@@ -9,9 +9,7 @@ public class EnemySpawn : MonoBehaviour
     WaveConfigSO currentWave;
 
     [SerializeField] bool isLooping;
-    /// <summary>
-    /// 
-    /// </summary>
+   
     [SerializeField] GameObject bossPref;
     [SerializeField] bool isSpawn = true;
     [SerializeField] int n_score = 500;
@@ -38,12 +36,13 @@ public class EnemySpawn : MonoBehaviour
         }
     }
 
+    //Get current Wave
     public WaveConfigSO GetCurrentWave()
     {
         return currentWave;
     }
 
-    IEnumerator SpawnEnemyWave()
+    IEnumerator SpawnEnemyWave()  //Spawn
     {
         do
         {

@@ -41,11 +41,13 @@ public class AudioPlayer : MonoBehaviour
         PlayClip(shootingClip, shootingVolume);
     }
 
+    //Damage sound
     public void PlayDamageClip()
     {
         PlayClip(damageClip, damageVolume);
     }
 
+    //health sound
     public void PlayHealthClip()
     {
         PlayClip(healthClip, healthVolume);

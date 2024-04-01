@@ -9,7 +9,7 @@ public class SpawnManager : MonoBehaviour
     protected float spawnTime;
     public int minTime;
     public int maxTime;
-    protected float m_spawnTime;
+    protected float m_spawnTime;//spawn after time
 
     protected Vector2 GetSpawnPos()
     {

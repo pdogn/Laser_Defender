@@ -6,7 +6,7 @@ using UnityEngine;
 [CreateAssetMenu]
 public class CharacterDatabase : ScriptableObject
 {
-    public Character[] character;
+    public Character[] character;//list ship skin
     public int characterCount
     {
         get

@@ -40,4 +40,11 @@ public class LevelManager : MonoBehaviour
         yield return new WaitForSeconds(delay);
         SceneManager.LoadScene(sceneName);
     }
+
+
+    public void LoadOnlMode()
+    {
+        //scorekeeper.ResetScore();
+        SceneManager.LoadScene("M_Lobby");
+    }
 }

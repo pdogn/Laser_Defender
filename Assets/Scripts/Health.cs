@@ -29,7 +29,7 @@ public class Health : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         DamageDealer damageDealer = collision.GetComponent<DamageDealer>();
-        HealthDealer healthDealer = collision.GetComponent<HealthDealer>();
+        HealthDealer healthDealer = collision.GetComponent<HealthDealer>();//buff hp
         //khi nhan damage
         if(damageDealer != null)
         {

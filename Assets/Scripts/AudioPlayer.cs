@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AudioPlayer : MonoBehaviour
 {
@@ -16,11 +17,24 @@ public class AudioPlayer : MonoBehaviour
     [SerializeField] AudioClip healthClip;
     [SerializeField][Range(0f, 1f)] float healthVolume = 1f;
 
+    //[Space]
+    //[SerializeField] GameObject _vollum;
+
     static AudioPlayer instance;
 
     private void Awake()
     {
         ManageSingleton();
+    }
+
+    private void Start()
+    {
+        //_vollum = GameObject.Find("SliderSound");
+    }
+
+    private void Update()
+    {
+        //transform.GetComponent<AudioSource>().volume = _vollum.GetComponent<Slider>().value;
     }
 
     void ManageSingleton()

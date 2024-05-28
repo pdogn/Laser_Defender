@@ -14,6 +14,7 @@ public class LevelManager : MonoBehaviour
     public void LoadGame()
     {
         scorekeeper.ResetScore();
+        scorekeeper.ResetCoin();
         SceneManager.LoadScene("ChangePlayer");
     }
 

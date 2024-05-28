@@ -5,11 +5,25 @@ using UnityEngine;
 public class Scorekeeper : MonoBehaviour
 {
     int score;
-    static Scorekeeper instance;
+    public int TotalCoin;
+    private const string totalCoinKey = "TotalCoinKey";
+    public string GetTotalCoinKey
+    {
+        get { return totalCoinKey; }
+    }
+
+    public int coin;
+
+    public static Scorekeeper instance;
 
     private void Awake()
     {
         ManageSingleton();
+    }
+
+    private void Start()
+    {
+        TotalCoin = PlayerPrefs.GetInt(totalCoinKey);
     }
 
     void ManageSingleton()
@@ -40,5 +54,27 @@ public class Scorekeeper : MonoBehaviour
     public void ResetScore()
     {
         score = 0;
+    }
+
+    public void ResetCoin()
+    {
+        coin = 0;
+    }
+
+    public int GetCoin()//coin luc choi
+    {
+        return coin;
+    }
+
+    public void SaveTotalCoin()
+    {
+        PlayerPrefs.SetInt(totalCoinKey, TotalCoin);
+        PlayerPrefs.Save();
+    }
+
+    public int GetTotalCoin()//Tong coin
+    {
+        TotalCoin = PlayerPrefs.GetInt(totalCoinKey);
+        return TotalCoin;
     }
 }

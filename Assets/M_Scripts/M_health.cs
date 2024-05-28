@@ -3,14 +3,17 @@ using TMPro;
 using UnityEngine;
 using Photon.Pun.UtilityScripts;
 using Unity.VisualScripting;
+using UnityEngine.UI;
 
 public class M_health : MonoBehaviourPunCallbacks
 {
-    [SerializeField] public int health;
+    [SerializeField] public float health;
     
     [SerializeField] ParticleSystem hitEffect;
 
-    [SerializeField] TextMeshPro _healText;
+    //[SerializeField] TextMeshPro _healText;
+
+    [SerializeField] Slider _healthSlider;
 
     public int _damage = 10;
 
@@ -18,12 +21,14 @@ public class M_health : MonoBehaviourPunCallbacks
 
     private void Start()
     {
-        _healText.text = health.ToString();
+        //_healText.text = health.ToString();
+        _healthSlider.value = health / 100;
     }
 
     private void FixedUpdate()
     {
-        _healText.text = health.ToString();
+        //_healText.text = health.ToString();
+        _healthSlider.value = health / 100;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -47,7 +52,7 @@ public class M_health : MonoBehaviourPunCallbacks
     {
         health -= damage;
 
-        _healText.text = health.ToString();
+        //_healText.text = health.ToString();
         
         if (health <= 0)
         {

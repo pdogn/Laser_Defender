@@ -15,9 +15,18 @@ public class M_PlayerSetup : MonoBehaviour
 
     public TextMeshPro nicknameText;
 
+    //public Vector3 offsetNameText;
+
     //public int score;
 
     //public TextMeshPro scoreText;
+
+
+    private void Update()
+    {
+        nicknameText.gameObject.transform.rotation = Camera.transform.rotation;
+        //nicknameText.transform.position = transform.position + offsetNameText;
+    }
 
     public void IsLocalPlayer()
     {

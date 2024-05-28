@@ -7,4 +7,11 @@ public class Character
 {
     public string characterName;
     public Sprite characterSprite;
+
+    public Color nomarColor;
+    public Color lockedColor;
+
+    public bool owned;
+
+    public int characterPrice;
 }

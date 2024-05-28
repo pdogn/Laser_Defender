@@ -85,10 +85,14 @@ public class M_RoomManager : MonoBehaviourPunCallbacks
     //{
     //    nickName = _name;
     //}
-
+    bool x = false;
     private void Update()
     {
-        
+        if (Input.GetKeyUp(KeyCode.L))
+        {
+            x = !x;
+            leaderBoard.SetActive(x);
+        }
     }
 
 
@@ -105,7 +109,7 @@ public class M_RoomManager : MonoBehaviourPunCallbacks
 
         nameUI.SetActive(false);
         roomCam.SetActive(false);
-        leaderBoard.SetActive(true);
+        //leaderBoard.SetActive(true);
         haveOnePlayer = true;
     }
 

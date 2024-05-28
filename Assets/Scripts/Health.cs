@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -17,6 +17,11 @@ public class Health : MonoBehaviour
     Scorekeeper scorekeeper;
 
     LevelManager levelManager;
+
+    [Header("COIN")]
+    public GameObject coinPrefab; // Prefab của xu
+    public int coinCount = 5; // Số lượng xu rơi ra
+    public float dropForce = 5f;
 
     void Awake()
     {
@@ -90,14 +95,35 @@ public class Health : MonoBehaviour
         if (!isPlayer)
         {
             scorekeeper.ModifyScore(score);
+            DropCoin();
         }
         else
         {
             levelManager.LoadGameOver();
+            Scorekeeper.instance.TotalCoin += Scorekeeper.instance.coin;
+            Scorekeeper.instance.SaveTotalCoin();
         }
         Destroy(gameObject);
     }
 
+    void DropCoin()
+    {
+        for (int i = 0; i < coinCount; i++)
+        {
+            // Tạo xu
+            GameObject coin = Instantiate(coinPrefab, transform.position, Quaternion.identity);
+
+            // Tính toán một hướng ngẫu nhiên
+            Vector2 randomDirection = Random.insideUnitCircle.normalized;
+
+            // Thêm lực vào xu
+            Rigidbody2D rb = coin.GetComponent<Rigidbody2D>();
+            if (rb != null)
+            {
+                rb.AddForce(randomDirection * dropForce, ForceMode2D.Impulse);
+            }
+        }
+    }
     void PlayHitEffect()
     {
         if(hitEffect != null)

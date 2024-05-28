@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: e90f18054ec86614aa09f8898eddad39, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5c0d66d283f17ac428fec7af5f6b07ef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -227,9 +227,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.011670023}
+  m_Offset: {x: 0, y: -0.14013058}
   serializedVersion: 2
-  m_Radius: 0.39496997
+  m_Radius: 0.7993311
 --- !u!114 &7713499875854683732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -246,7 +246,7 @@ MonoBehaviour:
   paddingLeft: 0.5
   paddingRight: 0.5
   paddingTop: 0.5
-  paddingBottom: 1.75
+  paddingBottom: 2
 --- !u!114 &-3255651064066885464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,6 +265,9 @@ MonoBehaviour:
   score: 50
   hitEffect: {fileID: 4828032695688353149, guid: f74fc0f81c2a73541a4d43c3a16ac729, type: 3}
   applyCameraShake: 1
+  coinPrefab: {fileID: 0}
+  coinCount: 5
+  dropForce: 5
 --- !u!114 &-578677514145073152
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -20,6 +20,10 @@ PrefabInstance:
       propertyPath: health
       value: 125
       objectReference: {fileID: 0}
+    - target: {fileID: 2017348982667751370, guid: dd6d67042b9985743933d95de529bc59, type: 3}
+      propertyPath: coinPrefab
+      value: 
+      objectReference: {fileID: 4256762917904969673, guid: b1d232996e209ac438a0cede34cf09f9, type: 3}
     - target: {fileID: 2955077805369792826, guid: dd6d67042b9985743933d95de529bc59, type: 3}
       propertyPath: m_Sprite
       value: 

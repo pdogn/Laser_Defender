@@ -125,10 +125,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
+  isBoss: 0
   health: 50
   score: 50
   hitEffect: {fileID: 4828032695688353149, guid: f74fc0f81c2a73541a4d43c3a16ac729, type: 3}
   applyCameraShake: 0
+  coinPrefab: {fileID: 4256762917904969673, guid: b1d232996e209ac438a0cede34cf09f9, type: 3}
+  coinCount: 5
+  dropForce: 5
 --- !u!114 &151111848422270972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -235,7 +239,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 123cdcd606f299c4eb3180c3f545a535, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ead5c373adccdf342bc0ad2874a505e9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

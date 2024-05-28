@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using UnityEngine.TextCore.Text;
 
 public class CharacterManager : MonoBehaviour
 {
@@ -12,6 +14,11 @@ public class CharacterManager : MonoBehaviour
     public SpriteRenderer artworkSprite;
 
     private int selectedOption = 0;
+
+    [SerializeField] Image uiPlayer;
+
+    [SerializeField] Button playBtn;
+    [SerializeField] TextMeshProUGUI playText;
 
     void Start()
     {
@@ -57,6 +64,10 @@ public class CharacterManager : MonoBehaviour
         Character character = characterDB.GetCharacter(selectOption);
         artworkSprite.sprite = character.characterSprite;
         nameText.text = character.characterName;
+
+        uiPlayer.sprite = character.characterSprite;
+
+        CheckAllowPlay(character);
     }
 
     public void Load()
@@ -71,5 +82,21 @@ public class CharacterManager : MonoBehaviour
     public void LoadGameScene()
     {
         SceneManager.LoadScene("Game");
+    }
+
+    public void CheckAllowPlay(Character _character)
+    {
+        if (_character.owned)
+        {
+            playBtn.interactable = true;
+            uiPlayer.color = _character.nomarColor;
+            playText.text = "Play";
+        }
+        else
+        {
+            playBtn.interactable = false;
+            uiPlayer.color = _character.lockedColor;
+            playText.text = "Log";
+        }
     }
 }

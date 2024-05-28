@@ -12,6 +12,10 @@ public class UIDisplay : MonoBehaviour
 
     [Header("Score")]
     [SerializeField] TextMeshProUGUI scoreText;
+
+    [Header("Coin")]
+    [SerializeField] TextMeshProUGUI coinText;
+
     Scorekeeper scorekeeper;
 
     private void Awake()
@@ -28,5 +32,7 @@ public class UIDisplay : MonoBehaviour
         healthSlider.value = playerHealth.GetHelth();
 
         scoreText.text = scorekeeper.GetScore().ToString("000000000");
+
+        coinText.text = "Coin: " + scorekeeper.GetCoin();
     }
 }

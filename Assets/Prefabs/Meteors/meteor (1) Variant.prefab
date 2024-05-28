@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &8959298576511550684
+--- !u!1001 &7432865615297243246
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,11 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1791376552570392355, guid: dd6d67042b9985743933d95de529bc59, type: 3}
       propertyPath: m_Radius
-      value: 0.44771165
+      value: 0.52557015
+      objectReference: {fileID: 0}
+    - target: {fileID: 1791376552570392355, guid: dd6d67042b9985743933d95de529bc59, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.05500056
       objectReference: {fileID: 0}
     - target: {fileID: 1791376552570392355, guid: dd6d67042b9985743933d95de529bc59, type: 3}
       propertyPath: m_Offset.y
-      value: 0.0017195344
+      value: 0.017702281
       objectReference: {fileID: 0}
     - target: {fileID: 2017348982667751370, guid: dd6d67042b9985743933d95de529bc59, type: 3}
       propertyPath: score
@@ -22,19 +26,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2017348982667751370, guid: dd6d67042b9985743933d95de529bc59, type: 3}
       propertyPath: health
-      value: 140
+      value: 125
       objectReference: {fileID: 0}
+    - target: {fileID: 2017348982667751370, guid: dd6d67042b9985743933d95de529bc59, type: 3}
+      propertyPath: coinPrefab
+      value: 
+      objectReference: {fileID: 4256762917904969673, guid: b1d232996e209ac438a0cede34cf09f9, type: 3}
     - target: {fileID: 2955077805369792826, guid: dd6d67042b9985743933d95de529bc59, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: f092bb453963d0f488fe3185a4b7636a, type: 3}
+      objectReference: {fileID: 21300000, guid: 750c9d74981f6a347822502e917d20ed, type: 3}
     - target: {fileID: 4264216960358674885, guid: dd6d67042b9985743933d95de529bc59, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.2908785
+      value: 0.24763381
       objectReference: {fileID: 0}
     - target: {fileID: 4264216960358674885, guid: dd6d67042b9985743933d95de529bc59, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.8214078
+      value: -2.6693654
       objectReference: {fileID: 0}
     - target: {fileID: 4264216960358674885, guid: dd6d67042b9985743933d95de529bc59, type: 3}
       propertyPath: m_LocalPosition.z
@@ -70,7 +78,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6322553211390386528, guid: dd6d67042b9985743933d95de529bc59, type: 3}
       propertyPath: m_Name
-      value: meteor (2) Variant
+      value: meteor (1) Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -14,10 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character:
   - characterName: alpha
-    characterSprite: {fileID: 21300000, guid: e90f18054ec86614aa09f8898eddad39, type: 3}
+    characterSprite: {fileID: 21300000, guid: 5c0d66d283f17ac428fec7af5f6b07ef, type: 3}
+    nomarColor: {r: 1, g: 1, b: 1, a: 1}
+    lockedColor: {r: 0, g: 0, b: 0, a: 1}
+    owned: 1
+    characterPrice: 0
   - characterName: beta
-    characterSprite: {fileID: 21300000, guid: a6258439c09cf374e8d1ba5eed3bef17, type: 3}
+    characterSprite: {fileID: 21300000, guid: 21a06cf7bf7b8ba499f3c94e490a3e10, type: 3}
+    nomarColor: {r: 1, g: 1, b: 1, a: 1}
+    lockedColor: {r: 0, g: 0, b: 0, a: 1}
+    owned: 0
+    characterPrice: 100
   - characterName: apolo
-    characterSprite: {fileID: 21300000, guid: cd2f572ebd5d71842bb394d1045b23b5, type: 3}
+    characterSprite: {fileID: 21300000, guid: 7cb03bc715fb0e5448320babc04f8488, type: 3}
+    nomarColor: {r: 1, g: 1, b: 1, a: 1}
+    lockedColor: {r: 0, g: 0, b: 0, a: 1}
+    owned: 0
+    characterPrice: 150
   - characterName: metal
-    characterSprite: {fileID: 21300000, guid: f99c5745257218f4ab6bd5cf9bff1f8c, type: 3}
+    characterSprite: {fileID: 21300000, guid: caad6375b2c5c9d4c9ce2a691b24cacc, type: 3}
+    nomarColor: {r: 1, g: 1, b: 1, a: 1}
+    lockedColor: {r: 0, g: 0, b: 0, a: 1}
+    owned: 0
+    characterPrice: 200

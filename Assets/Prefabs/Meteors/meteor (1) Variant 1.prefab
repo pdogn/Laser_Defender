@@ -60,6 +60,10 @@ PrefabInstance:
       propertyPath: health
       value: 130
       objectReference: {fileID: 0}
+    - target: {fileID: 8996441441796999076, guid: d63f92f8432e44d43a5dde07b737bdfe, type: 3}
+      propertyPath: coinPrefab
+      value: 
+      objectReference: {fileID: 4256762917904969673, guid: b1d232996e209ac438a0cede34cf09f9, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
